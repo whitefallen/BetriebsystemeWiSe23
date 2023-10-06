@@ -1,0 +1,8 @@
+version: '3'
+services:
+  ubuntu:
+    build: .
+    volumes:
+      - ./data:/home
+    restart: on-failure
+    tty: true
